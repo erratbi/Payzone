@@ -3,7 +3,7 @@
 namespace erratbi\Payzone;
 
 use erratbi\Payzone\Payzone;
-use Illumunate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
 class PayzoneServiceProvider extends ServiceProvider {
     
@@ -21,7 +21,7 @@ class PayzoneServiceProvider extends ServiceProvider {
             __DIR__.'/../config.php' => config_path('payzone.php'),
         ]);
         
-        $this->mergeConfigFrom(__DIR__.'/../config.php', 'payzone');
+        // $this->mergeConfigFrom(__DIR__.'/../config.php', 'payzone');
     }
 
 }
