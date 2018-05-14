@@ -1,0 +1,27 @@
+{
+    "name": "erratbi/payzone",
+    "description": "Payzone laravel package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Youssef Erratbi",
+            "email": "yerratbi@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+                "erratbi/payzone"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "erratbi\\Payzone\\": "src"
+        }
+    }
+}
