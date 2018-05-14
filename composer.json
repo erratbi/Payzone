@@ -14,9 +14,12 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": [
-                "erratbi/payzone"
-            ]
+            "providers": [
+                "erratbi\\Payzone\\PayzoneServiceProvider"
+            ],
+            "aliases": {
+                "Payzone": "erratbi\\Payzone\\Facades\\Payzone"
+            }
         }
     },
     "autoload": {
